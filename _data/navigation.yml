@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "PPG"
+    url: https://www.pucminas.br/pos/biologia/Paginas/default.aspx
+  - title: "Membros"
+    url: /membros/
+  - title: "Publicações"
+    url: /publicacoes/
+  - title: "Protocolos"
+    url: /protocols/
+  # - title: "Sitemap"
+  #   url: /sitemap/
