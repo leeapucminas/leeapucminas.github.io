@@ -1,0 +1,114 @@
+<div class="members-container">
+  {% for member in site.data.membros %}
+    <div class="member-card">
+      <div class="member-card__image">
+        {% if member.image %}
+          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="member-photo">
+        {% else %}
+          <div class="member-photo-placeholder">
+            <i class="fas fa-user-circle fa-5x"></i>
+          </div>
+        {% endif %}
+      </div>
+      
+      <div class="member-card__content">
+        <h3 class="member-card__name">{{ member.name }}</h3>
+        
+        {% if member.role %}
+          <p class="member-card__role">{{ member.role }}</p>
+        {% endif %}
+        
+        {% if member.about %}
+          <div class="member-card__about">
+            {{ member.about | markdownify }}
+          </div>
+        {% endif %}
+        
+        {% if member.lattes %}
+          <a href="{{ member.lattes }}" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small">
+            <i class="fas fa-external-link-alt"></i> Currículo Lattes
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.member-card__image {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
+}
+
+.member-photo-placeholder {
+  color: #999;
+  font-size: 3rem;
+}
+
+.member-card__name {
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.member-card__role {
+  color: #666;
+  font-style: italic;
+  margin: 0.25rem 0 1rem 0;
+  font-weight: 500;
+}
+
+.member-card__about {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  flex-grow: 1;
+}
+
+.member-card__about p {
+  margin: 0.5rem 0;
+}
+
+.btn--small {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .members-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
