@@ -1,0 +1,19 @@
+# Laboratory Members
+
+- name: "Gisele Pires de Mendonça Dantas"
+  role: "Coordenadora"
+  lattes: "http://lattes.cnpq.br/3879172921286504"
+  image: "/assets/images/members/gisele.jpg"
+  about: |
+    Doutora em Biologia, com especialização em Ecologia e Evolução de Aves. 
+    Coordena pesquisas sobre comportamento reprodutivo, filogeografia e conservação de espécies neotropicais.
+    Mais de 15 anos de experiência em ornitologia de campo.
+
+# Add more members following this format:
+# - name: "Member Name"
+#   role: "Position/Title"
+#   lattes: "http://lattes.cnpq.br/xxxxxxxxxxxx"
+#   image: "/assets/images/members/member.jpg"
+#   about: |
+#     Brief description of the member's background, research interests,
+#     and expertise. This can span multiple lines.
