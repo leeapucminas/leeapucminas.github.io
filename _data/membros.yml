@@ -3,12 +3,18 @@
 - name: "Gisele Pires de Mendonça Dantas"
   role: "Coordenadora"
   lattes: "http://lattes.cnpq.br/3879172921286504"
-  image: "/assets/images/members/gisele.jpg"
+  image: "/assets/images/members/gisele.png"
   about: |
-    Doutora em Biologia, com especialização em Ecologia e Evolução de Aves. 
-    Coordena pesquisas sobre comportamento reprodutivo, filogeografia e conservação de espécies neotropicais.
-    Mais de 15 anos de experiência em ornitologia de campo.
+    Bióloga graduada pela Universidade Federal de Minas Gerais (UFMG), mestre em Ecologia , Conservação e Manejo da Vida Silvestre pela UFMG e doutora em Genética pela Universidade de São Paulo (USP). Atualmente é professora adjunta da Pontifícia Universidade Católica de Minas Gerais, vinculada ao Programa de Pós-Graduação em Zoologia de Vertebrados. Sua linha de pesquisa engloba ecologia, genética e evolução de aves, principalmente trabalhando com passeriformes de Mata Atlântica e aves marinhas da América do Sul e Antártica.
 
+- name: "Jean C P Oliveira"
+  role: "Pós-doutorando"
+  lattes: "http://lattes.cnpq.br/9394209095599461"
+  image: "/assets/images/members/jean.png"
+  about: |
+    Pesquisador em genômica populacional e evolução de Aves Neotropicais.
+
+    
 # Add more members following this format:
 # - name: "Member Name"
 #   role: "Position/Title"
