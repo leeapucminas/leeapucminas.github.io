@@ -3,4 +3,13 @@
 <url>
 <loc>http://localhost:4000/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/linhas/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/membros/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
 </urlset>
